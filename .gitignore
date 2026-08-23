@@ -1,0 +1,17 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.tmp
+*.bak
+
+# Archives / temporary exports
+*.zip
+*.rar
+*.7z
+*.log
+
+# Python helper caches
+__pycache__/
+*.pyc
