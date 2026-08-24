@@ -12,6 +12,11 @@ Desktop.ini
 *.7z
 *.log
 
+# Published source code archives
+!code/
+code/*
+!code/*-source-code.zip
+
 # Python helper caches
 __pycache__/
 *.pyc

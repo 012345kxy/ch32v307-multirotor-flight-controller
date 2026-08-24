@@ -1,2 +1,5 @@
 *.epro2 binary
 *.pdf binary
+*.zip binary
+*.rar binary
+*.7z binary

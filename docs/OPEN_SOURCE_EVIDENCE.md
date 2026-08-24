@@ -15,5 +15,6 @@
 
 ## 实质性更新记录
 
+- 2026-08-25：新增 `code/ch32v307-multirotor-flight-controller-source-code.zip` 源码压缩包，补充 `docs/SOURCE_CODE.md` 源码归档说明，并在 README 中加入 Source Code 入口。
 - 2026-08-24：新增 `photo/` 项目装置照片 1 张，补充 `docs/PHOTOS.md` 照片说明，并在 README 中加入项目照片入口。
 - 本次更新用于增强项目技术文档完整性、实物成果可核查性和开源维护记录。

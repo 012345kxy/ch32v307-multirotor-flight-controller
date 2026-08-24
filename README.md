@@ -93,6 +93,10 @@
 - 补充飞行日志样例，用真实数据展示姿态、油门、电压和控制输出变化。
 - 增加常见问题记录，例如无法识别传感器、串口无输出、电机顺序错误、PID 震荡等排查方法。
 
+## Source Code
+
+本仓库已补充源码压缩包 `code/ch32v307-multirotor-flight-controller-source-code.zip`，包含 CH32 多旋翼飞控相关固件源码。源码归档说明、SHA256 校验值和打包边界见 `docs/SOURCE_CODE.md`。
+
 ## License
 
 This hardware design is released under CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0). See LICENSE. If firmware is added later, place a separate software license in the firmware directory.

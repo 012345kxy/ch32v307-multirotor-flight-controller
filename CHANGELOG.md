@@ -1,5 +1,11 @@
 # 变更记录
 
+## 2026-08-25
+
+- Added `code/ch32v307-multirotor-flight-controller-source-code.zip` as the published source code archive.
+- Added `docs/SOURCE_CODE.md` with archive contents, SHA256 checksum, and packaging notes.
+- Updated README, `.gitignore`, `.gitattributes`, and open-source evidence records for the source code release.
+
 ## 2026-08-24
 
 - 纳入 `photo/` 目录中的项目装置照片，并统一整理为 `device-01.png`。
