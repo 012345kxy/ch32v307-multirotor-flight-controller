@@ -2,11 +2,11 @@
 
 Project: CH32V307 Multirotor Flight Controller
 
-These notes explain how maintainers and reviewers should treat the published source archive.
+These notes explain how to use the published source archive.
 
 ## Recommended Use
 
-1. Download $(System.Collections.Hashtable.Archive) from the repository.
+1. Download `code/ch32v307-multirotor-flight-controller-source-code.zip` from the repository.
 2. Verify the SHA256 checksum listed in docs/SOURCE_CODE.md or docs/SOURCE_MANIFEST.md.
 3. Extract the archive into a clean working directory outside the repository.
 4. Open the embedded project with the matching WCH / RISC-V MCU development environment.

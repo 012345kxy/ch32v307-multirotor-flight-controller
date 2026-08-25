@@ -2,11 +2,11 @@
 
 ## 项目背景
 
-这是一块面向多旋翼无人机和小型机器人飞行平台的自研飞控板。它不是单纯为了“把器件堆到一块 PCB 上”，而是希望把飞控开发中最常见、最折腾人的几件事放到一块可复用的硬件底板上：稳定供电、可靠的惯性测量、足够多的外设接口、飞行参数调试、数据记录，以及后续算法迭代需要的扩展空间。
+这是一块面向多旋翼无人机和小型机器人飞行平台的自研飞控板。它把飞控开发中常用的供电、惯性测量、外设接口、参数调试和数据记录功能放在同一块硬件上，方便装机测试和后续修改。
 
-项目以沁恒 CH32V307VCT6 作为主控，配合 CH549G、ICM42688、MPU6050、DPS310、AT7456E、W28Q128 等芯片，面向 4-6S 电池供电场景设计。它更像是一块“能上机飞、也能继续折腾”的飞控实验平台：既可以用于多旋翼整机验证，也可以作为姿态解算、PID 控制、传感器融合、数据记录和上位机调参的课程设计或开源硬件基础。
+项目以 CH32V307VCT6 作为主控，配合 CH549G、ICM42688、MPU6050、DPS310、AT7456E、W28Q128 等芯片，面向 4-6S 电池供电场景设计。它可以用于多旋翼整机验证，也可以用于姿态解算、PID 控制、传感器融合、数据记录和上位机调参。
 
-对本科项目来说，这个项目的价值不只在于画完一块板，而在于它覆盖了完整的工程闭环：从电源和接口规划，到 PCB 设计、样板验证、参数调试，再到连续飞行测试。README 里会尽量把这些信息写清楚，方便后来者判断这个项目能做什么、怎么打开、从哪里开始复现。
+仓库中保留了硬件工程、源码压缩包、实物照片和测试说明，重点记录从 PCB 设计、样板验证到连续飞行测试的过程，方便后续继续复现和迭代。
 
 当前目录包含立创 EDA 专业版硬件工程文件：
 
@@ -69,7 +69,7 @@
 - 存储与显示层：TF 卡、W28Q128 与 AT7456E 支持数据记录、参数载入和视频叠加显示相关扩展。
 - 电源层：SY8303 降压至 5V，CAJ1117B 降压至 3.3V，并支持 5V / 3.3V 输出切换。
 - 调试层：上位机与串口链路用于参数配置、状态查看和飞控调参。
-- 应用层：面向多旋翼飞行、姿态控制算法验证、飞行日志采集和开源硬件教学复现。
+- 应用层：面向多旋翼飞行、姿态控制算法验证、飞行日志采集和开源硬件复现。
 
 ## 测试记录
 
@@ -93,15 +93,15 @@
 - 补充飞行日志样例，用真实数据展示姿态、油门、电压和控制输出变化。
 - 增加常见问题记录，例如无法识别传感器、串口无输出、电机顺序错误、PID 震荡等排查方法。
 
-## Documentation Index
+## 文档入口
 
-- [Source code archive notes](docs/SOURCE_CODE.md)
-- [Source archive manifest](docs/SOURCE_MANIFEST.md)
-- [Firmware usage notes](docs/FIRMWARE_USAGE.md)
-- [Source verification checklist](docs/SOURCE_VERIFICATION.md)
-- [Assessment evidence checklist](docs/ASSESSMENT_EVIDENCE.md)
-- [Project photos](docs/PHOTOS.md)
-- [Open-source evidence index](docs/OPEN_SOURCE_EVIDENCE.md)
+- [源码压缩包说明](docs/SOURCE_CODE.md)
+- [源码清单](docs/SOURCE_MANIFEST.md)
+- [固件使用说明](docs/FIRMWARE_USAGE.md)
+- [源码检查清单](docs/SOURCE_VERIFICATION.md)
+- [项目照片](docs/PHOTOS.md)
+- [项目维护记录](docs/PROJECT_LOG.md)
+
 ## Source Code
 
 本仓库已补充源码压缩包 `code/ch32v307-multirotor-flight-controller-source-code.zip`，包含 CH32 多旋翼飞控相关固件源码。源码归档说明、SHA256 校验值和打包边界见 `docs/SOURCE_CODE.md`。

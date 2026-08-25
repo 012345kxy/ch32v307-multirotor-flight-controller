@@ -2,14 +2,14 @@
 
 Project: CH32V307 Multirotor Flight Controller
 
-This manifest records the published source archive added on 2026-08-25.
+This manifest records the published source archive.
 
 ## Archive
 
-- Path: $(System.Collections.Hashtable.Archive)
+- Path: `code/ch32v307-multirotor-flight-controller-source-code.zip`
 - Size: 567.3 KB
 - Entries: 209
-- SHA256: $hash
+- SHA256: `DC8294ADC280C4076957057FBEE435416CFEE7568BF81CA52C18CF7EAA41B365`
 
 ## Scope
 
